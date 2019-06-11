@@ -20,6 +20,7 @@ const row = (x, i, header) => (
 
 );
 export default ({ data, header }) => {
+    console.log(data, header)
     return (
 
         <Table>

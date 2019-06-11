@@ -24,15 +24,16 @@ const styles = theme => ({
     },
 });
 
-class Games extends React.Components {
-    constructor(){
+class Games extends React.Component {
+    constructor() {
         super();
         this.state = {
-            games: []
+            games: [{"Opponent1_name": "Dzbany", "Opponent2_name": "W-4", "Opponent1_score": "10", "Opponent2_score": "24", "Place": "Politechnika"}]
         }
     }
 
     componentDidMount() {
+        console.log(this.state, 'STATE')
         axios.get(`${BASE_URL}/games`).then((response) => {
             const gamesRes = response.data;
             console.log(gamesRes);
@@ -42,13 +43,13 @@ class Games extends React.Components {
         });
     }
 
-render() {
-    return (
-        <div>
-            <Table header={[{name:'TeamA', prop:'TeamA' }, {name:'teamAscore', prop:'teamAscore' }, {name: 'TeamB', prop:'TeamB'}, {name:'teamBscore', prop:'teamBscore' }]} data={this.state.games} />
-        </div>
-    )
-}
+    render() {
+        return (
+            <div>
+                <Table header={[{name:'TeamA', prop:'Opponent1_name' }, {name:'teamAscore', prop:'Opponent1_score' }, {name: 'TeamB', prop:'Opponent2_name'}, {name:'teamBscore', prop:'Opponent2_score' }, {name: 'Place', prop: 'Place'}]} data={this.state.games} />
+            </div>
+        )
+    }
 }
 
 
