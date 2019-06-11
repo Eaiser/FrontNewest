@@ -91,7 +91,7 @@ class SetScore extends React.Component {
                     margin="normal"
                 />
 
-                <Button variant="contained" onClick={this.setScore} color="primary">
+                <Button variant="contained" onClick={this.SetScore} color="primary">
                     SetScore
                  </Button>
             </div>

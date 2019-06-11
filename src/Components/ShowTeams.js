@@ -25,11 +25,11 @@ class ShowTeams extends React.Component {
     render() {
         return (
             <div>
-                <Table header={[{name:'Name', prop:'name' }]} data={this.state.teams} />
+                <Table header={[{name: 'Name', prop:'name'},{name:'id', prop:'id' }, {name: 'First Name', prop:'firstName'}, {name: 'Last name', prop:'lastName'}, {name: 'nick', prop:'nick'}]} data={this.state.teams} />
             </div>
         )
     }
-
+//, {name:'id', prop:'id' }, {name: 'First Name', prop:'firstName'}, {name: 'Last name', prop:'lastName'}, {name: 'nick', prop:'nick'}
 }
 
 

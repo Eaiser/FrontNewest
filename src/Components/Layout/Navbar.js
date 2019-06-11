@@ -57,6 +57,7 @@ class Navbar extends Component {
                         >
                             <MenuItem onClick={this.handleUserClose}><a href='/addNewUser'>Add new user</a></MenuItem>
                             <MenuItem onClick={this.handleUserClose}><a href='/showUsers'>Show users</a></MenuItem>
+                            <MenuItem onClick={this.handleUserClose}><a href='/addUsersToTeam'>Add Users To Team</a></MenuItem>
                             
                         </Menu>
                         <Button

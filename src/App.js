@@ -8,8 +8,8 @@ import { MuiThemeProvider } from 'material-ui/styles';
 import ShowTeams from './Components/ShowTeams';
 import NewTeam from './Components/NewTeam';
 import SetScore from './Components/SetScore';
-
-
+import Games from './Components/Games';
+import AddUsersToTeam from './Components/AddUsersToTeam';
 class App extends Component {
     render() {
         return (
@@ -24,8 +24,9 @@ class App extends Component {
 
                             <Route path='/addNewTeam' component={NewTeam} />
                             <Route path='/showTeams' component={ShowTeams} />
-
+                            <Route path='/Games' component={Games} />
                             <Route path='/addScore' component={SetScore} />
+                            <Route path='/addUsersToTeam' component={AddUsersToTeam} />
                             
                         </div>
                     </BrowserRouter>

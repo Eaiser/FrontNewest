@@ -24,7 +24,6 @@ const styles = theme => ({
 });
 
 
-
 class NewTeam extends React.Component {
     constructor() {
         super();
@@ -55,6 +54,7 @@ class NewTeam extends React.Component {
     
 
     render() {
+        
         return (
             <div>
                 <TextField
@@ -71,9 +71,6 @@ class NewTeam extends React.Component {
                 <Button variant="contained" onClick={this.addTeam} color="primary">
                     Add Team
                  </Button>
-
-                 
-
 
         
             </div>
